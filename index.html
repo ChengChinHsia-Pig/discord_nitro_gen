@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="description" content="Free Random Discord Nitro Codes Generator" />
+    
+    <title>Discord Nitro Generator</title>
+    
+    <meta property="og:title" content="Discord Nitro Generator" />
+    <meta property="og:description" content="Discord Nitro Codes Generator" />
+    <meta property="og:url" content="https://nitrocodes.now.sh" />
+    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/716523839634407436/854479938840166400/nitro_codes_2.gif" />
+    <meta name="theme-color" content="#B7E1F1">
+    
+    <!-- favicon -->
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/716523839634407436/854117001815785472/2Q.png" type="image/gif" sizes="16x16">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">   
+
+  </head>
+
+<body>
+<div id="whole">
+
+<!-- HEADING -->
+<h1 style="margin-top: 2rem; margin-bottom: 1rem">DISCORD NITRO GENERATOR</h1>
+<p style="margin-bottom: 2rem;">This Generator makes Free Random Nitro Codes. MOST OF THE CODES WON'T WORK! Made for Fun purpose Only.</p>
+<p style="margin-bottom: 2rem;">Original code from HeySkidee. Modified by ChengChinHsia-Pig</p>
+
+<!-- TEXT AREA -->
+<textarea id="a" rows="11" cols="100" readonly style="resize: none; width: 800px; margin-left: auto; margin-right: auto; margin-bottom: 1.5rem;" class="col-md-6 form-control">
+Codes Will Appear Here:
+</textarea>
+
+<!-- SPEED INPUT -->
+<div class="input-group mb-3" style="width: 382px; margin-left: auto; margin-right: auto; ">
+  <span class="input-group-text" id="basic-addon3" >Enter codes generated per second: </span>
+  <input type="text" id="speed" value="3" class="form-control text-center"  >
+</div>
+
+<p style="margin-bottom: 1.3rem;"></p>
+
+<!-- BUTTONS -->
+<button id="generate" class="btn btn-primary" >
+  Generate
+</button>
+
+<button id="stop" class="btn btn-primary">
+  Stop
+</button>
+
+<button onclick="stop(); document.getElementById('a').value = 'Codes Will Appear Here:\n\n'; document.getElementById('b').value = '';" class="btn btn-primary" id="clear">
+  Clear
+</button>
+    
+<button id="save" onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Nitro Codes.txt', + document.getElementById('b').value)" class="btn btn-primary">
+  Download Codes
+</button>
+
+<p style="margin-bottom: 1.3rem;"></p>
+
+<a href="https://github.com/HeySkidee/Discord-Nitro-Codes-Generator" target="blank"><img src="https://avatars.githubusercontent.com/u/59761032?v=4" style="width: 150px;" placeholder="HeySkidee"></a>
+<a href="https://github.com/ChengChinHsia-Pig/discord_nitro_gen" target="blank"><img src="https://avatars.githubusercontent.com/u/103416952?v=4" style="width: 150px;" placeholder="ChengChinHsia-Pig"></a>
+<p style="margin-bottom: 2rem;"></p>
+
+<textarea style="display: none;" id="b" rows="11" cols="100" readonly=""></textarea>
+
+</div>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
